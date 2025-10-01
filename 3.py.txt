@@ -1,0 +1,17 @@
+import heapq
+
+# Приоритетная очередь (минимальная куча)
+heap = []
+heapq.heappush(heap, 10)
+heapq.heappush(heap, 3)
+heapq.heappush(heap, 6)
+print(heapq.heappop(heap))  # 3 (минимальный элемент извлекается)
+
+# Хеш-таблица (словарь)
+d = {}
+d["apple"] = 100
+d["banana"] = 200
+print(d["apple"])    # 100 (доступ по ключу)
+print("banana" in d) # True (проверка наличия ключа)
+del d["apple"]       # удаляем запись с ключом "apple"
+print("apple" in d)  # False (ключа "apple" больше нет)

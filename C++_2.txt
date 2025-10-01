@@ -1,0 +1,7 @@
+// Пример кода хеш-таблицы на C++:
+
+bool Find(const T& value, const THash1& hash1 = THash1(), const THash2& hash2 = THash2())
+    {
+        int h1 = hash1(value, buffer_size); 
+        int h2 = hash2(value, buffer_size); 
+        int i = 0;
